@@ -15,7 +15,7 @@ header {
 body {
     background-color: rgba(241, 246, 227, 0.91);
     text-decoration: none;
-    color: black;
+    color: rgba(0, 0, 0, 0.785);
     font-family: Montserrat, sans-serif;
     font-weight: 500;
 }
