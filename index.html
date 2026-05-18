@@ -1,102 +1,201 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
-<link rel="stylesheet" type="text/css" href="style.css">  
+    <!DOCTYPE html>
+
+    <title>Meu Mundo Dev</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav class="menu">
 
-            <!-- LOGO -->
+    <header>
+
+        <nav class="menu container">
+
             <a href="#" class="logo">
                 Meu Mundo
             </a>
 
-            <!-- MENU -->
             <ul>
-
                 <li><a href="#">Home</a></li>
-
-                <li><a href="#">Mais</a></li>
-
-                <li><a href="#">Novos Projetos</a></li>
-
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Projetos</a></li>
                 <li><a href="#">Contato</a></li>
-
             </ul>
 
-            <!-- GITHUB -->
-            <a 
-            href="https://github.com/Arezende7"
-            target="_blank"
-            class="github"
-            >
-            GitHub
+            <a href="https://github.com/" target="_blank" class="github-btn">
+                GitHub
             </a>
 
         </nav>
+
     </header>
-        <main>
-            <section class="container">
-                
-                <header class="texto">
-                    <span>Hello</span>
-                    <h1>Meu Mundo hoje</h1>
 
-                    <hr>
 
-                    <p class="tex1">
-                        Começar na programação é como entrar em um universo novo.
-                        No primeiro período, tudo parece desafiador: códigos estranhos,
-                        erros que aparecem do nada e aquela sensação de que cada linha digitada pode mudar tudo.
-                        Mas, ao mesmo tempo, é exatamente isso que torna a experiência tão interessante.</p>
-                    
-                    <p class="tex2">
-                        Entre aulas, pesquisas e muitas tentativas, o aprendizado vai além das linguagens de programação. 
-                       Aprendemos a pensar de forma lógica, resolver problemas e ter paciência para entender que errar faz parte do processo. 
-                       Cada pequeno projeto concluído traz a sensação de evolução e mostra que, pouco a pouco, estamos construindo algo maior.</p>
+    <main class="hero container">
 
-                    <p class="tex3">
-                        O primeiro período não forma apenas programadores. 
-                        Ele cria pessoas mais curiosas, criativas e preparadas para enfrentar desafios, dentro e fora da tecnologia.</p>
+    <!-- TEXTO -->
+    <section class="content">
 
-                    <div class="btts">
-                        <button class="icones">
-                            <img src="imagens/botao-HTML.png" alt="HTML">
-                        </button>    
-                        
-                        <button class="icones">
-                            <img src="imagens/Botao-CSS.png" alt="CSS">
-                        </button>    
-                        
-                        <button class="icones">
-                            <img src="imagens/botao-Java-Script.png" alt="JavaScript">
-                        </button>    
-                    </div>        
-                        
-                </header>
+        <span class="mini-title">
+            Hello Dev 👋
+        </span>
 
-                    <div class="galeria">
-                        <figure><img src="imagens/IMG07.jpg"></figure>
-                        <figure><img src="imagens/IMG01.jpg"></figure>
-                        <figure><img src="imagens/IMG02.jpg"></figure>
-                        <figure><img src="imagens/IMG03.jpg"></figure>
-                        <figure><img src="imagens/IMG04.jpg"></figure>
-                        <figure><img src="imagens/IMG06.jpg"></figure>
-                        <figure><img src="imagens/IMG05.jpg"></figure>
-                    </div>
+        <h1>
+            Transformando ideias em experiências digitais.
+        </h1>
 
-            </section>
+        <div class="line"></div>
 
-            <section>
+        <p>
+            Começar na programação é entrar em um universo onde criatividade,
+            lógica e tecnologia caminham juntas.
+        </p>
 
-            </section>
-        </main>
-            <footer>
+        <div class="buttons">
 
-            </footer>
+            <a href="#" class="primary-btn">
+                Ver Projetos
+            </a>
+
+            <a href="#" class="secondary-btn">
+                Saiba Mais
+            </a>
+
+        </div>
+
+        <div class="techs">
+
+            <button class="tech-btn">
+                <img src="Imagens/botao-HTML.png">
+            </button>
+
+            <button class="tech-btn">
+                <img src="Imagens/Botao-CSS.png">
+            </button>
+
+            <button class="tech-btn">
+                <img src="Imagens/botao-Java-Script.png">
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- MOSAICO -->
+    <section class="gallery">
+
+        <!-- IMAGEM GRANDE -->
+        <figure class="big">
+            <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop">
+        </figure>
+
+        <!-- COLUNA 1 -->
+        <div class="column">
+
+            <figure>
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop">
+            </figure>
+
+            <figure>
+                <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=1200&auto=format&fit=crop">
+            </figure>
+
+            <figure>
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1200&auto=format&fit=crop">
+            </figure>
+
+        </div>
+
+        <!-- COLUNA 2 -->
+        <div class="column">
+
+            <figure>
+                <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1200&auto=format&fit=crop">
+            </figure>
+
+            <figure>
+                <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?q=80&w=1200&auto=format&fit=crop">
+            </figure>
+
+            <figure>
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop">
+            </figure>
+
+        </div>
+
+    </section>
+
+</main>
+    
+    <section class="features container">
+
+    <div class="section-title">
+        <span>Interatividade</span>
+        <h2>Projetos e Funcionalidades</h2>
+        <p>
+            Algumas funcionalidades usando JavaScript para deixar a experiência
+            mais dinâmica e moderna.
+        </p>
+    </div>
+
+    <div class="cards">
+
+        <div class="feature-card">
+            <h3>Contador de Projetos</h3>
+
+            <div class="counter" id="counter">
+                0
+            </div>
+
+            <button onclick="aumentarProjetos()">
+                Adicionar Projeto
+            </button>
+        </div>
+
+
+        <div class="feature-card">
+            <h3>Modo Escuro</h3>
+
+            <p>
+                Altere rapidamente o tema do site.
+            </p>
+
+            <button onclick="alternarTema()">
+                Alternar Tema
+            </button>
+        </div>
+
+
+        <div class="feature-card">
+            <h3>Mensagem Dinâmica</h3>
+
+            <p id="mensagem">
+                Clique no botão abaixo.
+            </p>
+
+            <button onclick="mostrarMensagem()">
+                Mostrar Mensagem
+            </button>
+        </div>
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+</html>
+</head>
+<body>
+    
 </body>
 </html>
