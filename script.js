@@ -280,3 +280,168 @@ window.onload = () => {
     efeitoDigitacao();
 
 };
+
+/* ===== SNAKE GAME ===== */
+
+const canvas = document.getElementById("snakeGame");
+const ctx = canvas.getContext("2d");
+
+const scoreText = document.getElementById("score");
+
+const box = 16;
+
+let score = 0;
+
+let snake = [
+    {
+        x: 160,
+        y: 160
+    }
+];
+
+let direction = "RIGHT";
+
+let food = {
+    x: Math.floor(Math.random() * 20) * box,
+    y: Math.floor(Math.random() * 20) * box
+};
+
+document.addEventListener("keydown", updateDirection);
+
+function updateDirection(event){
+
+    if(event.key === "ArrowUp" && direction !== "DOWN"){
+        direction = "UP";
+    }
+
+    if(event.key === "ArrowDown" && direction !== "UP"){
+        direction = "DOWN";
+    }
+
+    if(event.key === "ArrowLeft" && direction !== "RIGHT"){
+        direction = "LEFT";
+    }
+
+    if(event.key === "ArrowRight" && direction !== "LEFT"){
+        direction = "RIGHT";
+    }
+
+}
+
+function startGame(){
+
+    ctx.fillStyle = "#111827";
+    ctx.fillRect(0, 0, 320, 320);
+
+    /* COMIDA */
+
+    ctx.fillStyle = "#ef4444";
+
+    ctx.fillRect(
+        food.x,
+        food.y,
+        box,
+        box
+    );
+
+    /* COBRINHA */
+
+    for(let i = 0; i < snake.length; i++){
+
+        ctx.fillStyle = i === 0
+        ? "#38bdf8"
+        : "#7dd3fc";
+
+        ctx.fillRect(
+            snake[i].x,
+            snake[i].y,
+            box,
+            box
+        );
+
+    }
+
+    let snakeX = snake[0].x;
+    let snakeY = snake[0].y;
+
+    if(direction === "UP") snakeY -= box;
+    if(direction === "DOWN") snakeY += box;
+    if(direction === "LEFT") snakeX -= box;
+    if(direction === "RIGHT") snakeX += box;
+
+    /* COMER */
+
+    if(
+        snakeX === food.x &&
+        snakeY === food.y
+    ){
+
+        score++;
+
+        scoreText.innerHTML = score;
+
+        food = {
+
+            x: Math.floor(Math.random() * 20) * box,
+
+            y: Math.floor(Math.random() * 20) * box
+
+        };
+
+    }else{
+
+        snake.pop();
+
+    }
+
+    const newHead = {
+        x: snakeX,
+        y: snakeY
+    };
+
+    /* COLISÃO */
+
+    if(
+
+        snakeX < 0 ||
+        snakeY < 0 ||
+        snakeX >= 320 ||
+        snakeY >= 320 ||
+        collision(newHead, snake)
+
+    ){
+
+        clearInterval(game);
+
+        setTimeout(() => {
+
+            alert("💀 Game Over");
+
+        }, 100);
+
+    }
+
+    snake.unshift(newHead);
+
+}
+
+function collision(head, array){
+
+    for(let i = 0; i < array.length; i++){
+
+        if(
+            head.x === array[i].x &&
+            head.y === array[i].y
+        ){
+
+            return true;
+
+        }
+
+    }
+
+    return false;
+
+}
+
+const game = setInterval(startGame, 100);
