@@ -850,7 +850,7 @@ header{
 }
 
 .frame:hover{
-    transform: scale(1.04) rotate(0deg);
+    transform: scale(1.2) rotate(0deg);
 }
 
 .frame-inner{
@@ -875,7 +875,7 @@ header{
 }
 
 .frame.wide{
-    grid-column: span 2;
+    grid-column: span 1;
 }
 
 /* RESPONSIVO */
