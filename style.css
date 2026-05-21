@@ -2,7 +2,7 @@
    RESET
 ========================================= */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,7 +12,7 @@
    BODY
 ========================================= */
 
-body{
+body {
 
     font-family: 'Poppins', sans-serif;
 
@@ -30,7 +30,7 @@ body{
    CONTAINER
 ========================================= */
 
-.container{
+.container {
 
     width: 100%;
 
@@ -45,7 +45,7 @@ body{
    HEADER
 ========================================= */
 
-header{
+header {
 
     position: sticky;
 
@@ -62,7 +62,7 @@ header{
 
 /* MENU */
 
-.menu{
+.menu {
 
     height: 90px;
 
@@ -75,7 +75,7 @@ header{
 
 /* LOGO */
 
-.logo{
+.logo {
 
     text-decoration: none;
 
@@ -90,14 +90,14 @@ header{
     transition: 0.3s ease;
 }
 
-.logo:hover{
+.logo:hover {
 
     color: #38bdf8;
 }
 
 /* LINKS */
 
-.menu ul{
+.menu ul {
 
     display: flex;
 
@@ -108,7 +108,7 @@ header{
     list-style: none;
 }
 
-.menu ul a{
+.menu ul a {
 
     text-decoration: none;
 
@@ -121,7 +121,7 @@ header{
     transition: 0.3s ease;
 }
 
-.menu ul a::after{
+.menu ul a::after {
 
     content: "";
 
