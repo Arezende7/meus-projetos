@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORKUT Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1>ORKUT</h1>
+        <p><a href=Conecte-se>Conecte-se </a>aos seus amigos e familiares com recados e mensagens instantaneas</p>
+        <p><a href=Conheça>Conheça</a> novas pessoas atraves de amigos de seus amigos e comunidades</p>
+        <p><a href=Compartilhe>Compartilhe</a> seus videos, fotos e paixoes em um so lugar</p>
+    </div>
+
+    <div>
+        
+    <div class="login-container">
+            <span>acesse o ORKUT com a sua conta do Google</span>
+        <form action="/login" method="POST">
+            <div class="input-grupo">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+            </div>
+            
+            <div class="input-grupo">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+            </div>
+            
+            <div>
+               <input type="checkbox">Salvar as minhas informações neste computador</button>
+               <p>Não use em computadores publicos</p>
+            </div>
+
+            <button type="submit">Entrar</button>
+        </form>
+        <div>
+            <p>Ainda nao e membro?</p>
+            <p><a href="/cadastro">Entre ja</a></p>
+        </div>
+    </div>
+    
+</body>
+</html>
