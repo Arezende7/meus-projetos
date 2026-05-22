@@ -16,7 +16,9 @@ const mensagens = [
 
     "Grandes projetos começam com pequenos passos.",
 
-    "Seu próximo código pode mudar tudo."
+    "Seu próximo código pode mudar tudo.",
+    
+    "Eu sou um com o universo"
 
 ];
 
