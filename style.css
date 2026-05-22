@@ -140,19 +140,19 @@ header {
     transition: 0.3s ease;
 }
 
-.menu ul a:hover{
+.menu ul a:hover {
 
     color: white;
 }
 
-.menu ul a:hover::after{
+.menu ul a:hover::after {
 
     width: 100%;
 }
 
 /* BOTÃO GITHUB */
 
-.github-btn{
+.github-btn {
 
     text-decoration: none;
 
@@ -169,7 +169,7 @@ header {
     transition: 0.3s ease;
 }
 
-.github-btn:hover{
+.github-btn:hover {
 
     transform: translateY(-4px);
 
@@ -180,7 +180,7 @@ header {
    HERO
 ========================================= */
 
-.hero{
+.hero {
 
     min-height: 100vh;
 
@@ -199,12 +199,12 @@ header {
    CONTENT
 ========================================= */
 
-.content{
+.content {
 
     width: 48%;
 }
 
-.mini-title{
+.mini-title {
 
     display: inline-block;
 
@@ -223,7 +223,7 @@ header {
     font-size: 14px;
 }
 
-.content h1{
+.content h1 {
 
     font-size: 72px;
 
@@ -232,7 +232,7 @@ header {
     margin-bottom: 25px;
 }
 
-.line{
+.line {
 
     width: 120px;
 
@@ -245,7 +245,7 @@ header {
     background: linear-gradient(90deg, #38bdf8, #2563eb);
 }
 
-.content p{
+.content p {
 
     font-size: 20px;
 
@@ -260,7 +260,7 @@ header {
    BUTTONS
 ========================================= */
 
-.buttons{
+.buttons {
 
     display: flex;
 
@@ -270,7 +270,7 @@ header {
 }
 
 .primary-btn,
-.secondary-btn{
+.secondary-btn {
 
     text-decoration: none;
 
@@ -283,21 +283,21 @@ header {
     transition: 0.3s ease;
 }
 
-.primary-btn{
+.primary-btn {
 
     background: linear-gradient(135deg, #0ea5e9, #2563eb);
 
     color: white;
 }
 
-.primary-btn:hover{
+.primary-btn:hover {
 
     transform: translateY(-5px);
 
     box-shadow: 0 15px 35px rgba(37,99,235,0.35);
 }
 
-.secondary-btn{
+.secondary-btn {
 
     border: 1px solid rgba(255,255,255,0.15);
 
@@ -306,7 +306,7 @@ header {
     background: rgba(255,255,255,0.04);
 }
 
-.secondary-btn:hover{
+.secondary-btn:hover {
 
     background: rgba(255,255,255,0.08);
 }
