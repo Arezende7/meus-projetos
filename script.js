@@ -171,6 +171,8 @@ function textoAutomatico(){
 
         "Criando experiências digitais 💻"
 
+        "Assista serie da Agatha Cristie"
+
     ];
 
     let index = 0;
