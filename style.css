@@ -212,7 +212,7 @@ header {
 
     padding: 10px 18px;
 
-    border-radius: 999px;
+    border-radius: 100px;
 
     background: rgba(56,189,248,0.12);
 
@@ -238,7 +238,7 @@ header {
 
     height: 5px;
 
-    border-radius: 999px;
+    border-radius: 100px;
 
     margin-bottom: 30px;
 
@@ -329,8 +329,6 @@ header {
     width: 120px;
 
     height: 110px;
-
-    border: none;
 
     border-radius: 24px;
 

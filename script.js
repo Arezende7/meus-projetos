@@ -18,7 +18,7 @@ const mensagens = [
 
     "Seu próximo código pode mudar tudo.",
     
-    "Eu sou um com o universo"
+    "Eu sou um com o universo",
 
 ];
 
@@ -169,9 +169,11 @@ function textoAutomatico(){
 
         "JavaScript Lover ⚡",
 
-        "Criando experiências digitais 💻"
+        "Criando experiências digitais 💻",
 
-        "Assista serie da Agatha Cristie"
+        "Assista serie da Agatha Cristie 💻",
+
+        "Crie disciplina 🚀",
 
     ];
 
