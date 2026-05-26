@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Meu Mundo Dev</title>
+    <title>Anderson Criações</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,13 +23,13 @@
         <nav class="menu container">
 
             <a href="#" class="logo">
-                Meu Mundo
+                Anderson Criações
             </a>
 
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Sobre</a></li>
-                <li><a href="#">Projetos</a></li>
+                <li><a href="#projetos">Projetos</a></li>
                 <li><a href="#">Contato</a></li>
             </ul>
 
@@ -64,7 +64,7 @@
 
             <div class="buttons">
 
-                <a href="#" class="primary-btn">
+                <a href="#projetos" class="primary-btn">
                     Ver Projetos
                 </a>
 
@@ -292,6 +292,360 @@
     </div>
 
 </section>
+
+<!-- ===== HALL DE PORTFÓLIOS ===== -->
+ 
+<section class="portfolio-section" id="projetos">
+ 
+    <div class="portfolio-header">
+ 
+        <span class="portfolio-tag">
+            PORTFÓLIO
+        </span>
+ 
+        <h2>
+            Criações Frontend
+        </h2>
+ 
+        <p>
+            Projetos desenvolvidos com HTML, CSS e JavaScript —
+            cada um com uma ideia única e uma experiência visual marcante.
+        </p>
+ 
+        <div class="portfolio-filters">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="landing">Landing Page</button>
+            <button class="filter-btn" data-filter="dashboard">Dashboard</button>
+            <button class="filter-btn" data-filter="component">Componente</button>
+            <button class="filter-btn" data-filter="app">App Web</button>
+        </div>
+ 
+    </div>
+ 
+    <div class="portfolio-grid" id="portfolioGrid">
+ 
+        <!-- PROJETO 1 -->
+        <div class="portfolio-card" data-category="landing" data-index="0">
+            <div class="card-thumb">
+                <div class="thumb-browser">
+                    <div class="browser-bar">
+                        <span class="browser-dot"></span>
+                        <span class="browser-dot"></span>
+                        <span class="browser-dot"></span>
+                        <div class="browser-url">meusite.com</div>
+                    </div>
+                    <div class="thumb-preview" style="background: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 50%, #16213e 100%);">
+                        <div class="preview-hero">
+                            <div class="preview-nav">
+                                <div class="preview-logo-bar"></div>
+                                <div class="preview-nav-links">
+                                    <span></span><span></span><span></span>
+                                </div>
+                            </div>
+                            <div class="preview-headline"></div>
+                            <div class="preview-subline"></div>
+                            <div class="preview-btns">
+                                <div class="preview-btn primary"></div>
+                                <div class="preview-btn secondary"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-overlay">
+                    <button class="view-btn" onclick="abrirModal(0)">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                        Ver Projeto
+                    </button>
+                </div>
+            </div>
+            <div class="card-info">
+                <div class="card-tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JS</span>
+                </div>
+                <h3>Landing Page Dark</h3>
+                <p>Página de apresentação com tema escuro, animações suaves e layout moderno.</p>
+                <div class="card-actions">
+                    <a href="#" class="action-link demo" target="_blank">Live Demo</a>
+                    <a href="#" class="action-link code" target="_blank">Código</a>
+                </div>
+            </div>
+        </div>
+ 
+        <!-- PROJETO 2 -->
+        <div class="portfolio-card" data-category="dashboard" data-index="1">
+            <div class="card-thumb">
+                <div class="thumb-browser">
+                    <div class="browser-bar">
+                        <span class="browser-dot"></span>
+                        <span class="browser-dot"></span>
+                        <span class="browser-dot"></span>
+                        <div class="browser-url">dashboard.app</div>
+                    </div>
+                    <div class="thumb-preview" style="background: #f8fafc;">
+                        <div class="preview-dashboard">
+                            <div class="preview-sidebar">
+                                <div class="sidebar-item active"></div>
+                                <div class="sidebar-item"></div>
+                                <div class="sidebar-item"></div>
+                                <div class="sidebar-item"></div>
+                            </div>
+                            <div class="preview-content">
+                                <div class="preview-cards-row">
+                                    <div class="mini-card" style="background:#e0f2fe;"></div>
+                                    <div class="mini-card" style="background:#dcfce7;"></div>
+                                    <div class="mini-card" style="background:#fef3c7;"></div>
+                                </div>
+                                <div class="preview-chart-box">
+                                    <div class="chart-bars">
+                                        <div class="chart-bar" style="height:40%;background:#60a5fa;"></div>
+                                        <div class="chart-bar" style="height:65%;background:#60a5fa;"></div>
+                                        <div class="chart-bar" style="height:50%;background:#60a5fa;"></div>
+                                        <div class="chart-bar" style="height:80%;background:#60a5fa;"></div>
+                                        <div class="chart-bar" style="height:55%;background:#60a5fa;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-overlay">
+                    <button class="view-btn" onclick="abrirModal(1)">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                        Ver Projeto
+                    </button>
+                </div>
+            </div>
+            <div class="card-info">
+                <div class="card-tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">Chart.js</span>
+                </div>
+                <h3>Dashboard Analytics</h3>
+                <p>Painel administrativo com gráficos interativos, métricas e design limpo.</p>
+                <div class="card-actions">
+                    <a href="#" class="action-link demo" target="_blank">Live Demo</a>
+                    <a href="#" class="action-link code" target="_blank">Código</a>
+                </div>
+            </div>
+        </div>
+ 
+        <!-- PROJETO 3 -->
+        <div class="portfolio-card" data-category="component" data-index="2">
+            <div class="card-thumb">
+                <div class="thumb-browser">
+                    <div class="browser-bar">
+                        <span class="browser-dot"></span>
+                        <span class="browser-dot"></span>
+                        <span class="browser-dot"></span>
+                        <div class="browser-url">ui-components.dev</div>
+                    </div>
+                    <div class="thumb-preview" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <div class="preview-cards-center">
+                            <div class="preview-ui-card">
+                                <div class="ui-avatar"></div>
+                                <div class="ui-lines">
+                                    <div class="ui-line long"></div>
+                                    <div class="ui-line short"></div>
+                                </div>
+                            </div>
+                            <div class="preview-ui-card small">
+                                <div class="ui-lines">
+                                    <div class="ui-line mid"></div>
+                                    <div class="ui-line short"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-overlay">
+                    <button class="view-btn" onclick="abrirModal(2)">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                        Ver Projeto
+                    </button>
+                </div>
+            </div>
+            <div class="card-info">
+                <div class="card-tags">
+                    <span class="tag">CSS</span>
+                    <span class="tag">Animações</span>
+                </div>
+                <h3>UI Components Kit</h3>
+                <p>Biblioteca de componentes reutilizáveis com animações e estados interativos.</p>
+                <div class="card-actions">
+                    <a href="#" class="action-link demo" target="_blank">Live Demo</a>
+                    <a href="#" class="action-link code" target="_blank">Código</a>
+                </div>
+            </div>
+        </div>
+ 
+        <!-- PROJETO 4 -->
+        <div class="portfolio-card featured" data-category="app" data-index="3">
+            <div class="card-thumb">
+                <div class="thumb-browser">
+                    <div class="browser-bar">
+                        <span class="browser-dot"></span>
+                        <span class="browser-dot"></span>
+                        <span class="browser-dot"></span>
+                        <div class="browser-url">weather-app.io</div>
+                    </div>
+                    <div class="thumb-preview" style="background: linear-gradient(180deg, #1e3a5f 0%, #2d6a9f 50%, #87ceeb 100%);">
+                        <div class="preview-weather">
+                            <div class="weather-icon">☀️</div>
+                            <div class="weather-temp"></div>
+                            <div class="weather-city"></div>
+                            <div class="weather-row">
+                                <div class="weather-info-item"></div>
+                                <div class="weather-info-item"></div>
+                                <div class="weather-info-item"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="featured-badge">⭐ Destaque</span>
+                <div class="card-overlay">
+                    <button class="view-btn" onclick="abrirModal(3)">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                        Ver Projeto
+                    </button>
+                </div>
+            </div>
+            <div class="card-info">
+                <div class="card-tags">
+                    <span class="tag">JS</span>
+                    <span class="tag">API</span>
+                    <span class="tag">CSS</span>
+                </div>
+                <h3>Weather App</h3>
+                <p>Aplicativo de clima em tempo real usando API, com animações e design glassmorphism.</p>
+                <div class="card-actions">
+                    <a href="#" class="action-link demo" target="_blank">Live Demo</a>
+                    <a href="#" class="action-link code" target="_blank">Código</a>
+                </div>
+            </div>
+        </div>
+ 
+        <!-- PROJETO 5 -->
+        <div class="portfolio-card" data-category="landing" data-index="4">
+            <div class="card-thumb">
+                <div class="thumb-browser">
+                    <div class="browser-bar">
+                        <span class="browser-dot"></span>
+                        <span class="browser-dot"></span>
+                        <span class="browser-dot"></span>
+                        <div class="browser-url">ecommerce.store</div>
+                    </div>
+                    <div class="thumb-preview" style="background: #fff7ed;">
+                        <div class="preview-ecommerce">
+                            <div class="ecom-header">
+                                <div class="ecom-logo"></div>
+                                <div class="ecom-cart"></div>
+                            </div>
+                            <div class="ecom-products">
+                                <div class="ecom-product" style="background:#fed7aa;"></div>
+                                <div class="ecom-product" style="background:#fde68a;"></div>
+                                <div class="ecom-product" style="background:#bbf7d0;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-overlay">
+                    <button class="view-btn" onclick="abrirModal(4)">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                        Ver Projeto
+                    </button>
+                </div>
+            </div>
+            <div class="card-info">
+                <div class="card-tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JS</span>
+                </div>
+                <h3>E-commerce Store</h3>
+                <p>Loja virtual com carrinho de compras, filtros de produtos e layout responsivo.</p>
+                <div class="card-actions">
+                    <a href="#" class="action-link demo" target="_blank">Live Demo</a>
+                    <a href="#" class="action-link code" target="_blank">Código</a>
+                </div>
+            </div>
+        </div>
+ 
+        <!-- PROJETO 6 -->
+        <div class="portfolio-card" data-category="component" data-index="5">
+            <div class="card-thumb">
+                <div class="thumb-browser">
+                    <div class="browser-bar">
+                        <span class="browser-dot"></span>
+                        <span class="browser-dot"></span>
+                        <span class="browser-dot"></span>
+                        <div class="browser-url">quiz-game.fun</div>
+                    </div>
+                    <div class="thumb-preview" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);">
+                        <div class="preview-quiz">
+                            <div class="quiz-question"></div>
+                            <div class="quiz-options">
+                                <div class="quiz-opt correct"></div>
+                                <div class="quiz-opt"></div>
+                                <div class="quiz-opt"></div>
+                                <div class="quiz-opt"></div>
+                            </div>
+                            <div class="quiz-progress">
+                                <div class="quiz-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-overlay">
+                    <button class="view-btn" onclick="abrirModal(5)">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                        Ver Projeto
+                    </button>
+                </div>
+            </div>
+            <div class="card-info">
+                <div class="card-tags">
+                    <span class="tag">JS</span>
+                    <span class="tag">CSS</span>
+                </div>
+                <h3>Quiz Interativo</h3>
+                <p>Jogo de perguntas e respostas com animações, pontuação e tela de resultados.</p>
+                <div class="card-actions">
+                    <a href="#" class="action-link demo" target="_blank">Live Demo</a>
+                    <a href="#" class="action-link code" target="_blank">Código</a>
+                </div>
+            </div>
+        </div>
+ 
+    </div>
+ 
+</section>
+ 
+ 
+<!-- ===== MODAL DE PROJETO ===== -->
+<div class="modal-overlay" id="projectModal" onclick="fecharModal(event)">
+    <div class="modal-box">
+ 
+        <button class="modal-close" onclick="fecharModalBtn()">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+ 
+        <div class="modal-preview-area" id="modalPreview"></div>
+ 
+        <div class="modal-info">
+            <div class="modal-tags" id="modalTags"></div>
+            <h3 id="modalTitle"></h3>
+            <p id="modalDesc"></p>
+            <div class="modal-links">
+                <a href="#" id="modalDemo" class="action-link demo" target="_blank">🚀 Live Demo</a>
+                <a href="#" id="modalCode" class="action-link code" target="_blank">💻 Ver Código</a>
+            </div>
+        </div>
+ 
+    </div>
+</div>
 
 
 <script src="script.js"></script>
