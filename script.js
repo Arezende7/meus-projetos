@@ -1,82 +1,87 @@
 // =========================================
-// CONFIGURAÇÕES INICIAIS
+// DADOS DOS PROJETOS
+// Edite aqui para adicionar/alterar projetos.
+// A ordem deve bater com o data-index dos cards no HTML.
 // =========================================
 
-// CONTADOR DE PROJETOS
-let totalProjetos = 0;
-
-// ARRAY DE MENSAGENS
-const mensagens = [
-
-    "A programação transforma ideias em realidade.",
-
-    "Cada linha de código é um novo aprendizado.",
-
-    "Criatividade e tecnologia andam juntas.",
-
-    "Grandes projetos começam com pequenos passos.",
-
-    "Seu próximo código pode mudar tudo.",
-    
-    "Eu sou um com o universo",
-
+const projetos = [
+    {
+        titulo: "Bússola CRM",
+        descricao: "CRM completo usado no dia a dia da Bússola Criativa, desenvolvido em PHP e MySQL: pipeline de vendas visual, atendimento automático com IA via WhatsApp (Evolution API), integração com Meta Ads através do Make, calendário de tarefas e relatórios de conversão em tempo real.",
+        tags: ["PHP", "MySQL", "WhatsApp API", "IA"],
+        demoUrl: "https://crm.bussolacriativa.com",
+        codeUrl: "https://github.com/Arezende7",
+        imagens: [
+            // Prints locais:
+            "imagens/projetos/crm/1.png",
+            "imagens/projetos/crm/2.png",
+            "imagens/projetos/crm/3.png",
+            // Prints hospedados no site da Bússola:
+            "https://bussolacriativa.com/wp-content/uploads/2026/06/Clientes.png",
+            "https://bussolacriativa.com/wp-content/uploads/2026/06/tarefas.png",
+            "https://bussolacriativa.com/wp-content/uploads/2026/06/relatorios.png"
+        ]
+    },
+    {
+        titulo: "Dashboard Financeiro",
+        descricao: "Painel financeiro completo desenvolvido em PHP e MySQL, com gráficos em Chart.js: controle mensal e anual de receitas e despesas, relatórios por categoria, investimentos e previsão dos próximos 12 meses.",
+        tags: ["PHP", "MySQL", "Chart.js"],
+        demoUrl: "https://financeiro.bussolacriativa.com",
+        codeUrl: "https://github.com/Arezende7",
+        imagens: [
+            "imagens/projetos/financeiro/1.png",
+            "imagens/projetos/financeiro/2.png",
+            "imagens/projetos/financeiro/3.png"
+        ]
+    },
+    {
+        titulo: "Site da Bússola Criativa",
+        descricao: "Site institucional da agência, com foco em SEO, performance e conversão — integrado ao WhatsApp e ao Bússola CRM. Desenvolvido com WordPress e Elementor.",
+        tags: ["WordPress", "Elementor", "SEO"],
+        demoUrl: "https://bussolacriativa.com",
+        codeUrl: "https://github.com/Arezende7",
+        imagens: [
+            "imagens/projetos/site/1.png",
+            "imagens/projetos/site/2.png",
+            "imagens/projetos/site/3.png",
+            "imagens/projetos/site/4.png",
+            "imagens/projetos/site/5.png",
+            "imagens/projetos/site/6.png",
+            "imagens/projetos/site/7.png",
+            "imagens/projetos/site/8.png"
+        ]
+    },
+    {
+        titulo: "Nostalgia Orkut",
+        descricao: "Recriação da clássica rede social dos anos 2000, com página de perfil, scraps e o visual nostálgico original. Projeto de estudo desenvolvido com HTML e CSS puro, sem frameworks.",
+        tags: ["HTML", "CSS"],
+        demoUrl: "orkut/index.html", // cópia do projeto dentro do portfólio
+        codeUrl: "https://github.com/Arezende7",
+        imagens: [
+            "imagens/projetos/orkut/1.png"
+        ]
+    }
 ];
 
-// ÍNDICE DA MENSAGEM
-let mensagemAtual = 0;
-
 
 // =========================================
 // CONTADOR DE PROJETOS
 // =========================================
 
-function aumentarProjetos(){
+let totalProjetos = 0;
 
+function aumentarProjetos() {
     totalProjetos++;
-
     document.getElementById("counter").innerText = totalProjetos;
-
 }
 
 
 // =========================================
-// DIMINUIR PROJETOS
+// ALTERNAR TEMA (CLARO/ESCURO)
 // =========================================
 
-function diminuirProjetos(){
-
-    if(totalProjetos > 0){
-
-        totalProjetos--;
-
-        document.getElementById("counter").innerText = totalProjetos;
-
-    }
-
-}
-
-
-// =========================================
-// RESETAR CONTADOR
-// =========================================
-
-function resetarProjetos(){
-
-    totalProjetos = 0;
-
-    document.getElementById("counter").innerText = totalProjetos;
-
-}
-
-
-// =========================================
-// ALTERNAR TEMA
-// =========================================
-
-function alternarTema(){
-
+function alternarTema() {
     document.body.classList.toggle("light-mode");
-
 }
 
 
@@ -84,148 +89,66 @@ function alternarTema(){
 // MENSAGEM DINÂMICA
 // =========================================
 
-function mostrarMensagem(){
+const mensagens = [
+    "A programação transforma ideias em realidade.",
+    "Cada linha de código é um novo aprendizado.",
+    "Criatividade e tecnologia andam juntas.",
+    "Grandes projetos começam com pequenos passos.",
+    "Seu próximo código pode mudar tudo."
+];
 
-    const texto = document.getElementById("mensagem");
+let mensagemAtual = 0;
 
-    texto.innerText = mensagens[mensagemAtual];
-
-    mensagemAtual++;
-
-    // VOLTA PARA A PRIMEIRA MENSAGEM
-    if(mensagemAtual >= mensagens.length){
-
-        mensagemAtual = 0;
-
-    }
-
+function mostrarMensagem() {
+    document.getElementById("mensagem").innerText = mensagens[mensagemAtual];
+    mensagemAtual = (mensagemAtual + 1) % mensagens.length;
 }
 
 
 // =========================================
-// SCROLL SUAVE
+// TEXTO AUTOMÁTICO (BADGE DO HERO)
 // =========================================
 
-function scrollProjetos(){
-
-    const secao = document.getElementById("projetos");
-
-    secao.scrollIntoView({
-
-        behavior: "smooth"
-
-    });
-
-}
-
-
-// =========================================
-// ANIMAÇÃO NOS CARDS
-// =========================================
-
-function animarCards(){
-
-    const cards = document.querySelectorAll(".feature-card");
-
-    cards.forEach((card, index) => {
-
-        setTimeout(() => {
-
-            card.classList.add("show");
-
-        }, index * 200);
-
-    });
-
-}
-
-
-// =========================================
-// MENU MOBILE
-// =========================================
-
-function abrirMenu(){
-
-    const menu = document.querySelector(".menu ul");
-
-    menu.classList.toggle("active");
-
-}
-
-
-// =========================================
-// TROCAR TEXTO AUTOMATICAMENTE
-// =========================================
-
-function textoAutomatico(){
-
+function textoAutomatico() {
     const titulo = document.querySelector(".mini-title");
 
     const frases = [
-
         "Front-End Developer 🚀",
-
-        "UI Designer 🎨",
-
-        "JavaScript Lover ⚡",
-
-        "Criando experiências digitais 💻",
-
-        "Assista serie da Agatha Cristie 💻",
-
-        "Crie disciplina 🚀",
-
+        "HTML • CSS • JavaScript ⚡",
+        "UI em constante evolução 🎨",
+        "Criando experiências digitais 💻"
     ];
 
     let index = 0;
 
     setInterval(() => {
-
         titulo.innerText = frases[index];
-
-        index++;
-
-        if(index >= frases.length){
-
-            index = 0;
-
-        }
-
+        index = (index + 1) % frases.length;
     }, 3000);
-
 }
 
 
 // =========================================
-// EFEITO DE DIGITAÇÃO
+// EFEITO DE DIGITAÇÃO NO TÍTULO
 // =========================================
 
-function efeitoDigitacao(){
-
-    const texto = "Transformando ideias em experiências digitais.";
-
+function efeitoDigitacao() {
     const elemento = document.querySelector(".content h1");
+    const texto = elemento.textContent.trim().replace(/\s+/g, " ");
 
-    elemento.innerHTML = "";
-
+    let parcial = "";
     let i = 0;
 
-    function digitar(){
+    elemento.textContent = "";
 
-        if(i < texto.length){
-
-            elemento.innerHTML += texto.charAt(i);
-
+    (function digitar() {
+        if (i < texto.length) {
+            parcial += texto.charAt(i);
+            elemento.textContent = parcial;
             i++;
-
             setTimeout(digitar, 50);
-
         }
-
-    }
-
-    digitar();
-
+    })();
 }
 
 
@@ -233,144 +156,51 @@ function efeitoDigitacao(){
 // BOTÃO VOLTAR AO TOPO
 // =========================================
 
-function voltarAoTopo(){
-
-    window.scrollTo({
-
-        top: 0,
-
-        behavior: "smooth"
-
-    });
-
+function voltarAoTopo() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
-
-// =========================================
-// APARECER BOTÃO AO ROLAR
-// =========================================
-
 window.addEventListener("scroll", () => {
-
     const botao = document.getElementById("topButton");
+    const visivel = window.scrollY > 300;
 
-    if(window.scrollY > 300){
-
-        botao.style.opacity = "1";
-
-        botao.style.pointerEvents = "all";
-
-    }
-
-    else{
-
-        botao.style.opacity = "0";
-
-        botao.style.pointerEvents = "none";
-
-    }
-
+    botao.style.opacity = visivel ? "1" : "0";
+    botao.style.pointerEvents = visivel ? "all" : "none";
 });
 
 
 // =========================================
-// CARREGAMENTO DA PÁGINA
+// FILTROS DO PORTFÓLIO
 // =========================================
 
-window.onload = () => {
-
-    animarCards();
-
-    textoAutomatico();
-
-    efeitoDigitacao();
-
-};
-
-// ===== DADOS DOS PROJETOS =====
-// Edite aqui para adicionar/alterar seus projetos!
-const projetos = [
-    {
-        titulo: "Landing Page Dark",
-        descricao: "Página de apresentação com tema escuro, animações suaves e layout moderno. Desenvolvida com foco em performance e experiência visual marcante.",
-        tags: ["HTML", "CSS", "JavaScript"],
-        demoUrl: "#",
-        codeUrl: "#",
-        previewBg: "linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 50%, #16213e 100%)"
-    },
-    {
-        titulo: "Dashboard Analytics",
-        descricao: "Painel administrativo com gráficos interativos, métricas em tempo real e design limpo. Inclui sidebar, cards de dados e visualizações dinâmicas.",
-        tags: ["HTML", "CSS", "Chart.js"],
-        demoUrl: "#",
-        codeUrl: "#",
-        previewBg: "#f8fafc"
-    },
-    {
-        titulo: "UI Components Kit",
-        descricao: "Biblioteca de componentes reutilizáveis com animações CSS avançadas, estados interativos e documentação de uso. Inclui cards, modais, botões e inputs.",
-        tags: ["CSS", "Animações", "JavaScript"],
-        demoUrl: "#",
-        codeUrl: "#",
-        previewBg: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
-    },
-    {
-        titulo: "Weather App",
-        descricao: "Aplicativo de clima em tempo real usando Open Weather API, com animações por condição climática, geolocalização e design glassmorphism responsivo.",
-        tags: ["JavaScript", "API REST", "CSS"],
-        demoUrl: "#",
-        codeUrl: "#",
-        previewBg: "linear-gradient(180deg, #1e3a5f 0%, #2d6a9f 50%, #87ceeb 100%)"
-    },
-    {
-        titulo: "E-commerce Store",
-        descricao: "Loja virtual completa com carrinho de compras, filtros por categoria, busca em tempo real e página de checkout responsiva.",
-        tags: ["HTML", "CSS", "JavaScript"],
-        demoUrl: "#",
-        codeUrl: "#",
-        previewBg: "#fff7ed"
-    },
-    {
-        titulo: "Quiz Interativo",
-        descricao: "Jogo de perguntas e respostas com temporizador, múltiplas categorias, animações de feedback, sistema de pontuação e ranking local.",
-        tags: ["JavaScript", "CSS"],
-        demoUrl: "#",
-        codeUrl: "#",
-        previewBg: "linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)"
-    }
-];
- 
-// ===== FILTROS =====
 function initFiltros() {
-    const btns = document.querySelectorAll('.filter-btn');
-    const cards = document.querySelectorAll('.portfolio-card');
- 
+    const btns = document.querySelectorAll(".filter-btn");
+    const cards = document.querySelectorAll(".portfolio-card");
+
     btns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            // Atualiza botão ativo
-            btns.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
- 
+        btn.addEventListener("click", () => {
+            btns.forEach(b => b.classList.remove("active"));
+            btn.classList.add("active");
+
             const filtro = btn.dataset.filter;
- 
+
             cards.forEach(card => {
-                if (filtro === 'all' || card.dataset.category === filtro) {
-                    card.classList.remove('hidden');
-                    // Pequena animação de entrada
-                    card.style.animation = 'none';
+                if (filtro === "all" || card.dataset.category === filtro) {
+                    card.classList.remove("hidden");
+                    card.style.animation = "none";
                     requestAnimationFrame(() => {
-                        card.style.animation = 'cardEntrada 0.35s ease forwards';
+                        card.style.animation = "cardEntrada 0.35s ease forwards";
                     });
                 } else {
-                    card.classList.add('hidden');
+                    card.classList.add("hidden");
                 }
             });
         });
     });
 }
- 
-// Animação CSS injetada via JS
-const estiloAnimacao = document.createElement('style');
+
+// Animação de entrada dos cards (injetada via JS)
+const estiloAnimacao = document.createElement("style");
 estiloAnimacao.textContent = `
     @keyframes cardEntrada {
         from { opacity: 0; transform: translateY(16px); }
@@ -378,97 +208,226 @@ estiloAnimacao.textContent = `
     }
 `;
 document.head.appendChild(estiloAnimacao);
- 
-// ===== MODAL =====
+
+
+// =========================================
+// CARROSSEL DE IMAGENS
+// Cria um álbum de prints do projeto.
+// opcoes.auto  = passa os slides sozinho (usado nos cards)
+// opcoes.setas = mostra botões de navegação (usado no modal)
+// =========================================
+
+function criarCarrossel(imagens, titulo, opcoes = {}) {
+    const wrap = document.createElement("div");
+    wrap.className = "carousel";
+
+    const track = document.createElement("div");
+    track.className = "carousel-track";
+
+    imagens.forEach(src => {
+        const slide = document.createElement("div");
+        slide.className = "carousel-slide";
+
+        const img = document.createElement("img");
+        img.src = src;
+        img.alt = titulo;
+        img.loading = "lazy";
+
+        // Se a imagem não existir, remove o slide
+        img.onerror = () => {
+            slide.remove();
+            atualizar();
+        };
+
+        slide.appendChild(img);
+        track.appendChild(slide);
+    });
+
+    wrap.appendChild(track);
+
+    const dots = document.createElement("div");
+    dots.className = "carousel-dots";
+    wrap.appendChild(dots);
+
+    let atual = 0;
+    let timer = null;
+
+    function atualizar() {
+        const total = track.children.length;
+
+        // Sem nenhuma imagem válida: remove o carrossel
+        // (o preview ilustrativo original volta a aparecer)
+        if (total === 0) {
+            clearInterval(timer);
+            wrap.remove();
+            return;
+        }
+
+        if (atual >= total) atual = 0;
+        track.style.transform = `translateX(-${atual * 100}%)`;
+
+        dots.innerHTML = "";
+        for (let i = 0; i < total; i++) {
+            const dot = document.createElement("span");
+            dot.className = "carousel-dot" + (i === atual ? " active" : "");
+            dot.onclick = (e) => {
+                e.stopPropagation();
+                atual = i;
+                atualizar();
+            };
+            dots.appendChild(dot);
+        }
+        dots.style.display = total > 1 ? "" : "none";
+    }
+
+    function irPara(delta) {
+        const total = track.children.length;
+        if (total === 0) return;
+        atual = (atual + delta + total) % total;
+        atualizar();
+    }
+
+    if (opcoes.setas) {
+        const prev = document.createElement("button");
+        prev.className = "carousel-arrow prev";
+        prev.innerHTML = "‹";
+        prev.onclick = (e) => { e.stopPropagation(); irPara(-1); };
+
+        const next = document.createElement("button");
+        next.className = "carousel-arrow next";
+        next.innerHTML = "›";
+        next.onclick = (e) => { e.stopPropagation(); irPara(1); };
+
+        wrap.append(prev, next);
+    }
+
+    if (opcoes.auto) {
+        timer = setInterval(() => irPara(1), 3000);
+    }
+
+    atualizar();
+    return wrap;
+}
+
+// Insere um carrossel automático no thumb de cada card
+function initCarrosseisDosCards() {
+    document.querySelectorAll(".portfolio-card").forEach(card => {
+        const projeto = projetos[card.dataset.index];
+        if (!projeto || !projeto.imagens || projeto.imagens.length === 0) return;
+
+        const preview = card.querySelector(".thumb-preview");
+        const carrossel = criarCarrossel(projeto.imagens, projeto.titulo, { auto: true });
+        carrossel.classList.add("carousel-thumb");
+        preview.appendChild(carrossel);
+    });
+}
+
+
+// =========================================
+// MODAL DE PROJETO
+// =========================================
+
 function abrirModal(index) {
     const projeto = projetos[index];
-    const modal = document.getElementById('projectModal');
- 
-    // Preenche as informações
-    document.getElementById('modalTitle').textContent = projeto.titulo;
-    document.getElementById('modalDesc').textContent = projeto.descricao;
-    document.getElementById('modalDemo').href = projeto.demoUrl;
-    document.getElementById('modalCode').href = projeto.codeUrl;
- 
+    const modal = document.getElementById("projectModal");
+
+    document.getElementById("modalTitle").textContent = projeto.titulo;
+    document.getElementById("modalDesc").textContent = projeto.descricao;
+    document.getElementById("modalCode").href = projeto.codeUrl;
+
+    // Esconde o botão de demo em projetos offline
+    const modalDemo = document.getElementById("modalDemo");
+    if (projeto.demoUrl) {
+        modalDemo.href = projeto.demoUrl;
+        modalDemo.style.display = "";
+    } else {
+        modalDemo.style.display = "none";
+    }
+
     // Tags
-    const tagsContainer = document.getElementById('modalTags');
-    tagsContainer.innerHTML = '';
+    const tagsContainer = document.getElementById("modalTags");
+    tagsContainer.innerHTML = "";
     projeto.tags.forEach(tag => {
-        const span = document.createElement('span');
-        span.className = 'tag';
+        const span = document.createElement("span");
+        span.className = "tag";
         span.textContent = tag;
         tagsContainer.appendChild(span);
     });
- 
-    // Preview no modal (reutiliza o thumb do card clicado)
-    const originalCard = document.querySelectorAll('.portfolio-card')[index];
-    const thumbClone = originalCard.querySelector('.thumb-browser').cloneNode(true);
-    // Remove overlay se vier clonado
-    const overlayClone = thumbClone.querySelector('.card-overlay');
-    if (overlayClone) overlayClone.remove();
- 
-    const previewArea = document.getElementById('modalPreview');
-    previewArea.innerHTML = '';
-    thumbClone.style.height = '100%';
-    previewArea.appendChild(thumbClone);
- 
-    // Abre modal
-    modal.classList.add('open');
-    document.body.style.overflow = 'hidden';
+
+    // Preview: carrossel com os prints do projeto
+    // (se não houver imagens, clona o thumb ilustrativo do card)
+    const previewArea = document.getElementById("modalPreview");
+    previewArea.innerHTML = "";
+
+    if (projeto.imagens && projeto.imagens.length > 0) {
+        const carrossel = criarCarrossel(projeto.imagens, projeto.titulo, { setas: true });
+        carrossel.classList.add("carousel-modal");
+        previewArea.appendChild(carrossel);
+    } else {
+        const originalCard = document.querySelector(`.portfolio-card[data-index="${index}"]`);
+        const thumbClone = originalCard.querySelector(".thumb-browser").cloneNode(true);
+        const overlayClone = thumbClone.querySelector(".card-overlay");
+        if (overlayClone) overlayClone.remove();
+        thumbClone.style.height = "100%";
+        previewArea.appendChild(thumbClone);
+    }
+
+    modal.classList.add("open");
+    document.body.style.overflow = "hidden";
 }
- 
+
 function fecharModal(event) {
-    if (event.target === document.getElementById('projectModal')) {
+    if (event.target === document.getElementById("projectModal")) {
         fecharModalBtn();
     }
 }
- 
+
 function fecharModalBtn() {
-    const modal = document.getElementById('projectModal');
-    modal.classList.remove('open');
-    document.body.style.overflow = '';
+    document.getElementById("projectModal").classList.remove("open");
+    document.body.style.overflow = "";
 }
- 
-// Fecha modal com Escape
-document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') fecharModalBtn();
+
+document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") fecharModalBtn();
 });
- 
-// ===== ANIMAÇÃO DE ENTRADA COM SCROLL =====
+
+
+// =========================================
+// ANIMAÇÃO DE ENTRADA COM SCROLL
+// =========================================
+
 function initScrollReveal() {
-    const cards = document.querySelectorAll('.portfolio-card');
- 
+    const cards = document.querySelectorAll(".portfolio-card");
+
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry, i) => {
             if (entry.isIntersecting) {
                 setTimeout(() => {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
+                    entry.target.style.opacity = "1";
+                    entry.target.style.transform = "translateY(0)";
                 }, i * 80);
                 observer.unobserve(entry.target);
             }
         });
     }, { threshold: 0.1 });
- 
+
     cards.forEach(card => {
-        card.style.opacity = '0';
-        card.style.transform = 'translateY(30px)';
-        card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        card.style.opacity = "0";
+        card.style.transform = "translateY(30px)";
+        card.style.transition = "opacity 0.5s ease, transform 0.5s ease";
         observer.observe(card);
     });
 }
- 
-// ===== INIT =====
-document.addEventListener('DOMContentLoaded', () => {
+
+
+// =========================================
+// INICIALIZAÇÃO
+// =========================================
+
+document.addEventListener("DOMContentLoaded", () => {
+    textoAutomatico();
+    efeitoDigitacao();
     initFiltros();
     initScrollReveal();
+    initCarrosseisDosCards();
 });
-
-/* ===================================================
-   COMO ADICIONAR UM NOVO PROJETO:
-   
-   1. Adicione um novo objeto no array "projetos" acima
-   2. Adicione o HTML de um novo .portfolio-card no index.html
-   3. Atualize o data-index e o data-category do card
-   4. Personalize o .thumb-preview com o visual do projeto
-   =================================================== */

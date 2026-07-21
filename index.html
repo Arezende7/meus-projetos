@@ -3,650 +3,544 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Anderson Criações</title>
+    <meta name="description" content="Portfólio de Anderson de Rezende — Desenvolvedor Frontend. Projetos em HTML, CSS e JavaScript.">
+
+    <title>Anderson de Rezende | Desenvolvedor Frontend</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
-
-    <!-- Ícone da aba -->
     <link rel="icon" type="image/png" href="imagens/Icon.png">
 </head>
 <body>
 
+    <!-- ===== HEADER ===== -->
     <header>
-
         <nav class="menu container">
-
-            <a href="#" class="logo">
-                Anderson Criações
-            </a>
+            <a href="#" class="logo">Anderson<span>.dev</span></a>
 
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#certificados">Certificados</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
 
-            <a href="https://github.com/" target="_blank" class="github-btn">
-                GitHub
-            </a>
-
+            <a href="https://github.com/Arezende7" target="_blank" class="github-btn">GitHub</a>
         </nav>
-
     </header>
 
+    <!-- ===== HERO ===== -->
+    <main class="hero container">
 
-<main class="hero container">
-
-        <!-- TEXTO -->
         <section class="content">
+            <span class="mini-title">Hello Dev 👋</span>
 
-            <span class="mini-title">
-                Hello Dev 👋
-            </span>
-
-            <h1>
-                Transformando ideias em experiências digitais.
-            </h1>
+            <h1>Transformando ideias em experiências digitais.</h1>
 
             <div class="line"></div>
 
             <p>
-                Começar na programação é entrar em um universo onde criatividade,
-                lógica e tecnologia caminham juntas.
+                Desenvolvedor Frontend em início de carreira, unindo criatividade,
+                lógica e tecnologia para construir interfaces modernas e funcionais.
             </p>
 
             <div class="buttons">
-
-                <a href="#projetos" class="primary-btn">
-                    Ver Projetos
-                </a>
-
-                <a href="#sobre" class="secondary-btn">
-                    Saiba Mais
-                </a>
-
+                <a href="#projetos" class="primary-btn">Ver Projetos</a>
+                <a href="#sobre" class="secondary-btn">Sobre Mim</a>
             </div>
 
             <div class="techs">
-
-                <button class="tech-btn">
-                    <img src="imagens/botao-HTML.png" alt="botao-HTML">
+                <button class="tech-btn" title="HTML5">
+                    <img src="imagens/botao-HTML.png" alt="HTML5">
                 </button>
-
-                <button class="tech-btn">
-                    <img src="imagens/Botao-CSS.png" alt="Botao-CSS">
+                <button class="tech-btn" title="CSS3">
+                    <img src="imagens/Botao-CSS.png" alt="CSS3">
                 </button>
-
-                <button class="tech-btn">
-                    <img src="imagens/botao-Java-Script.png" alt="botao-Java-Script">
+                <button class="tech-btn" title="JavaScript">
+                    <img src="imagens/botao-Java-Script.png" alt="JavaScript">
                 </button>
-
             </div>
-
         </section>
-
 
         <!-- MOSAICO -->
         <section class="gallery">
-
-        <!-- IMAGEM GRANDE -->
-        <figure class="big">
-            <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop">
-        </figure>
-
-        <!-- COLUNA 1 -->
-        <div class="column">
-
-            <figure>
-                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop">
+            <figure class="big">
+                <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop" alt="Código em tela">
             </figure>
 
-            <figure>
-                <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=1200&auto=format&fit=crop">
-            </figure>
+            <div class="column">
+                <figure><img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop" alt="Notebook com código"></figure>
+                <figure><img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=1200&auto=format&fit=crop" alt="Programação em dupla"></figure>
+                <figure><img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1200&auto=format&fit=crop" alt="Notebook com editor de código"></figure>
+            </div>
 
-            <figure>
-                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1200&auto=format&fit=crop">
-            </figure>
+            <div class="column">
+                <figure><img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1200&auto=format&fit=crop" alt="Código colorido"></figure>
+                <figure><img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?q=80&w=1200&auto=format&fit=crop" alt="Desenvolvedor trabalhando"></figure>
+                <figure><img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop" alt="Equipe de tecnologia"></figure>
+            </div>
+        </section>
 
+    </main>
+
+    <!-- ===== SOBRE MIM ===== -->
+    <section class="about-section container" id="sobre">
+
+        <div class="section-title">
+            <span>Sobre Mim</span>
+            <h2>Quem é o Anderson?</h2>
         </div>
 
-        <!-- COLUNA 2 -->
-        <div class="column">
+        <div class="about-grid">
 
-            <figure>
-                <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1200&auto=format&fit=crop">
-            </figure>
+            <div class="about-text">
+                <p>
+                    Sou o Anderson, desenvolvedor e cofundador da <strong>Bússola Criativa</strong>,
+                    agência de marketing digital onde cuido de toda a parte técnica: criação de
+                    sites, desenvolvimento do Bússola CRM e as automações que conectam anúncios,
+                    WhatsApp e funil de vendas num fluxo só.
+                </p>
+                <p>
+                    Meu caminho na programação começou de forma prática — precisava de
+                    ferramentas para o meu próprio negócio e decidi aprender a construí-las.
+                    Hoje trabalho no dia a dia com HTML, CSS, JavaScript, PHP, MySQL e WordPress, além de
+                    automação de processos com <strong>Make</strong> e <strong>n8n</strong>: bots de atendimento no
+                    WhatsApp, integrações com Meta Ads e rotinas que levam cada lead direto
+                    para o CRM, sem trabalho manual.
+                </p>
+                <p>
+                    Gosto de construir coisas que resolvem problemas reais. Cada projeto deste
+                    portfólio nasceu de uma necessidade de verdade — e está em uso até hoje.
+                </p>
 
-            <figure>
-                <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?q=80&w=1200&auto=format&fit=crop">
-            </figure>
+                <div class="about-highlights">
+                    <div class="highlight">
+                        <strong>4+</strong>
+                        <span>Projetos em produção</span>
+                    </div>
+                    <div class="highlight">
+                        <strong>6+</strong>
+                        <span>Certificações</span>
+                    </div>
+                    <div class="highlight">
+                        <strong>2024</strong>
+                        <span>Cofundador da Bússola Criativa</span>
+                    </div>
+                </div>
+            </div>
 
-            <figure>
-                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop">
-            </figure>
+            <div class="about-skills">
+                <h3>Qualificações</h3>
+                <ul>
+                    <li><span>HTML5 &amp; CSS3</span><div class="skill-bar"><div style="width: 85%"></div></div></li>
+                    <li><span>JavaScript</span><div class="skill-bar"><div style="width: 65%"></div></div></li>
+                    <li><span>PHP &amp; MySQL</span><div class="skill-bar"><div style="width: 70%"></div></div></li>
+                    <li><span>WordPress &amp; Elementor</span><div class="skill-bar"><div style="width: 80%"></div></div></li>
+                    <li><span>Automações (Make &amp; n8n)</span><div class="skill-bar"><div style="width: 75%"></div></div></li>
+                    <li><span>Git &amp; GitHub</span><div class="skill-bar"><div style="width: 60%"></div></div></li>
+                </ul>
+            </div>
 
         </div>
 
     </section>
 
-</main>
-    
+    <!-- ===== INTERATIVIDADE ===== -->
     <section class="features container">
 
-    <div class="section-title">
-        <span>Interatividade</span>
-        <h2>Projetos e Funcionalidades</h2>
-        <p>
-            Algumas funcionalidades usando JavaScript para deixar a experiência
-            mais dinâmica e moderna.
-        </p>
-    </div>
-
-    <div class="cards">
-
-        <div class="feature-card">
-            <h3>Contador de Projetos</h3>
-
-            <div class="counter" id="counter">
-                0
-            </div>
-
-            <button onclick="aumentarProjetos()">
-                Adicionar Projeto
-            </button>
-        </div>
-
-
-        <div class="feature-card">
-            <h3>Modo Escuro</h3>
-
+        <div class="section-title">
+            <span>Interatividade</span>
+            <h2>Funcionalidades em JavaScript</h2>
             <p>
-                Altere rapidamente o tema do site.
+                Pequenas demonstrações de JavaScript puro para deixar a
+                experiência mais dinâmica e moderna.
+            </p>
+        </div>
+
+        <div class="cards">
+
+            <div class="feature-card">
+                <h3>Contador de Projetos</h3>
+                <div class="counter" id="counter">0</div>
+                <button onclick="aumentarProjetos()">Adicionar Projeto</button>
+            </div>
+
+            <div class="feature-card">
+                <h3>Modo Claro/Escuro</h3>
+                <p>Altere rapidamente o tema do site.</p>
+                <button onclick="alternarTema()">Alternar Tema</button>
+            </div>
+
+            <div class="feature-card">
+                <h3>Mensagem Dinâmica</h3>
+                <p id="mensagem">Clique no botão abaixo.</p>
+                <button onclick="mostrarMensagem()">Mostrar Mensagem</button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===== PORTFÓLIO ===== -->
+    <section class="portfolio-section" id="projetos">
+
+        <div class="portfolio-header">
+            <span class="portfolio-tag">PORTFÓLIO</span>
+            <h2>Meus Projetos</h2>
+            <p>
+                Projetos reais, em produção — de sites institucionais a
+                sistemas completos com PHP, MySQL e integrações com IA.
             </p>
 
-            <button onclick="alternarTema()">
-                Alternar Tema
-            </button>
-        </div>
-
-
-        <div class="feature-card">
-            <h3>Mensagem Dinâmica</h3>
-
-            <p id="mensagem">
-                Clique no botão abaixo.
-            </p>
-
-            <button onclick="mostrarMensagem()">
-                Mostrar Mensagem
-            </button>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ===== HALL DA FAMA ===== -->
-
-<section class="hall-section" id="sobre">
-
-    <div class="hall-header">
-
-        <span class="hall-tag">
-            HALL DA FAMA
-        </span>
-
-        <h2>
-            Certificados & Conquistas
-        </h2>
-
-        <p>
-            Uma coleção de experiências, especializações e certificações
-            que representam evolução constante e paixão por tecnologia.
-        </p>
-
-    </div>
-
-    <div class="hall-wall">
-
-        <!-- CERTIFICADO -->
-
-        <div class="frame">
-
-            <div class="frame-inner">
-
-                <img src="imagens/certificado MAKE.jpg" alt="Certificado">
-
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="landing">Site</button>
+                <button class="filter-btn" data-filter="dashboard">Dashboard</button>
+                <button class="filter-btn" data-filter="app">App Web</button>
             </div>
-
         </div>
 
-        <!-- CERTIFICADO -->
+        <div class="portfolio-grid" id="portfolioGrid">
 
-        <div class="frame large">
-
-            <div class="frame-inner">
-
-                <img src="imagens/Certificado B3 mercados.jpg" alt="Certificado">
-
-            </div>
-
-        </div>
-
-        <!-- CERTIFICADO -->
-
-        <div class="frame">
-
-            <div class="frame-inner">
-
-                <img src="imagens/Certificado B3 renda fixa.jpg" alt="Certificado">
-
-            </div>
-
-        </div>
-
-        <!-- CERTIFICADO -->
-
-        <div class="frame">
-
-            <div class="frame-inner">
-
-                <img src="imagens/Certificado B3.jpg" alt="Certificado">
-
-            </div>
-
-        </div>
-
-        <!-- CERTIFICADO -->
-
-        <div class="frame wide">
-
-            <div class="frame-inner">
-
-                <img src="imagens/Certificado Copy.jpg" alt="Certificado">
-
-            </div>
-
-        </div>
-
-        <!-- CERTIFICADO -->
-
-        <div class="frame">
-
-            <div class="frame-inner">
-
-                <img src="imagens/Certificado.jpg" alt="Certificado">
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ===== HALL DE PORTFÓLIOS ===== -->
- 
-<section class="portfolio-section" id="projetos">
- 
-    <div class="portfolio-header">
- 
-        <span class="portfolio-tag">
-            PORTFÓLIO
-        </span>
- 
-        <h2>
-            Criações Frontend
-        </h2>
- 
-        <p>
-            Projetos desenvolvidos com HTML, CSS e JavaScript —
-            cada um com uma ideia única e uma experiência visual marcante.
-        </p>
- 
-        <div class="portfolio-filters">
-            <button class="filter-btn active" data-filter="all">Todos</button>
-            <button class="filter-btn" data-filter="landing">Landing Page</button>
-            <button class="filter-btn" data-filter="dashboard">Dashboard</button>
-            <button class="filter-btn" data-filter="component">Componente</button>
-            <button class="filter-btn" data-filter="app">App Web</button>
-        </div>
- 
-    </div>
- 
-    <div class="portfolio-grid" id="portfolioGrid">
- 
-        <!-- PROJETO 1 -->
-        <div class="portfolio-card" data-category="landing" data-index="0">
-            <div class="card-thumb">
-                <div class="thumb-browser">
-                    <div class="browser-bar">
-                        <span class="browser-dot"></span>
-                        <span class="browser-dot"></span>
-                        <span class="browser-dot"></span>
-                        <div class="browser-url">meusite.com</div>
-                    </div>
-                    <div class="thumb-preview" style="background: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 50%, #16213e 100%);">
-                        <div class="preview-hero">
-                            <div class="preview-nav">
-                                <div class="preview-logo-bar"></div>
-                                <div class="preview-nav-links">
-                                    <span></span><span></span><span></span>
+            <!-- PROJETO 1: CRM -->
+            <div class="portfolio-card featured" data-category="app" data-index="0">
+                <div class="card-thumb">
+                    <div class="thumb-browser">
+                        <div class="browser-bar">
+                            <span class="browser-dot"></span>
+                            <span class="browser-dot"></span>
+                            <span class="browser-dot"></span>
+                            <div class="browser-url">crm.bussolacriativa.com</div>
+                        </div>
+                        <div class="thumb-preview preview-bg-crm">
+                            <div class="preview-crm">
+                                <div class="crm-sidebar">
+                                    <div class="sidebar-item active"></div>
+                                    <div class="sidebar-item"></div>
+                                    <div class="sidebar-item"></div>
+                                    <div class="sidebar-item"></div>
                                 </div>
-                            </div>
-                            <div class="preview-headline"></div>
-                            <div class="preview-subline"></div>
-                            <div class="preview-btns">
-                                <div class="preview-btn primary"></div>
-                                <div class="preview-btn secondary"></div>
+                                <div class="crm-content">
+                                    <div class="crm-toolbar"></div>
+                                    <div class="crm-row"></div>
+                                    <div class="crm-row"></div>
+                                    <div class="crm-row"></div>
+                                    <div class="crm-row"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="card-overlay">
-                    <button class="view-btn" onclick="abrirModal(0)">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
-                        Ver Projeto
-                    </button>
-                </div>
-            </div>
-            <div class="card-info">
-                <div class="card-tags">
-                    <span class="tag">HTML</span>
-                    <span class="tag">CSS</span>
-                    <span class="tag">JS</span>
-                </div>
-                <h3>Landing Page Dark</h3>
-                <p>Página de apresentação com tema escuro, animações suaves e layout moderno.</p>
-                <div class="card-actions">
-                    <a href="#" class="action-link demo" target="_blank">Live Demo</a>
-                    <a href="#" class="action-link code" target="_blank">Código</a>
-                </div>
-            </div>
-        </div>
- 
-        <!-- PROJETO 2 -->
-        <div class="portfolio-card" data-category="dashboard" data-index="1">
-            <div class="card-thumb">
-                <div class="thumb-browser">
-                    <div class="browser-bar">
-                        <span class="browser-dot"></span>
-                        <span class="browser-dot"></span>
-                        <span class="browser-dot"></span>
-                        <div class="browser-url">dashboard.app</div>
+                    <span class="featured-badge">⭐ Destaque</span>
+                    <div class="card-overlay">
+                        <button class="view-btn" onclick="abrirModal(0)">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                            Ver Projeto
+                        </button>
                     </div>
-                    <div class="thumb-preview" style="background: #f8fafc;">
-                        <div class="preview-dashboard">
-                            <div class="preview-sidebar">
-                                <div class="sidebar-item active"></div>
-                                <div class="sidebar-item"></div>
-                                <div class="sidebar-item"></div>
-                                <div class="sidebar-item"></div>
-                            </div>
-                            <div class="preview-content">
-                                <div class="preview-cards-row">
-                                    <div class="mini-card" style="background:#e0f2fe;"></div>
-                                    <div class="mini-card" style="background:#dcfce7;"></div>
-                                    <div class="mini-card" style="background:#fef3c7;"></div>
+                </div>
+                <div class="card-info">
+                    <div class="card-tags">
+                        <span class="tag">PHP</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">WhatsApp API</span>
+                        <span class="tag">IA</span>
+                    </div>
+                    <h3>Bússola CRM</h3>
+                    <p>CRM completo com pipeline de vendas, atendimento com IA via WhatsApp e integração com Meta Ads.</p>
+                    <div class="card-actions">
+                        <a href="https://crm.bussolacriativa.com" class="action-link demo" target="_blank">Live Demo</a>
+                        <a href="https://github.com/Arezende7" class="action-link code" target="_blank">Código</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJETO 2: DASHBOARD FINANCEIRO -->
+            <div class="portfolio-card" data-category="dashboard" data-index="1">
+                <div class="card-thumb">
+                    <div class="thumb-browser">
+                        <div class="browser-bar">
+                            <span class="browser-dot"></span>
+                            <span class="browser-dot"></span>
+                            <span class="browser-dot"></span>
+                            <div class="browser-url">financeiro.bussolacriativa.com</div>
+                        </div>
+                        <div class="thumb-preview preview-bg-dashboard">
+                            <div class="preview-dashboard">
+                                <div class="preview-sidebar">
+                                    <div class="sidebar-item active"></div>
+                                    <div class="sidebar-item"></div>
+                                    <div class="sidebar-item"></div>
+                                    <div class="sidebar-item"></div>
                                 </div>
-                                <div class="preview-chart-box">
-                                    <div class="chart-bars">
-                                        <div class="chart-bar" style="height:40%;background:#60a5fa;"></div>
-                                        <div class="chart-bar" style="height:65%;background:#60a5fa;"></div>
-                                        <div class="chart-bar" style="height:50%;background:#60a5fa;"></div>
-                                        <div class="chart-bar" style="height:80%;background:#60a5fa;"></div>
-                                        <div class="chart-bar" style="height:55%;background:#60a5fa;"></div>
+                                <div class="preview-content">
+                                    <div class="preview-cards-row">
+                                        <div class="mini-card blue"></div>
+                                        <div class="mini-card green"></div>
+                                        <div class="mini-card yellow"></div>
+                                    </div>
+                                    <div class="preview-chart-box">
+                                        <div class="chart-bars">
+                                            <div class="chart-bar" style="height:40%"></div>
+                                            <div class="chart-bar" style="height:65%"></div>
+                                            <div class="chart-bar" style="height:50%"></div>
+                                            <div class="chart-bar" style="height:80%"></div>
+                                            <div class="chart-bar" style="height:55%"></div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="card-overlay">
-                    <button class="view-btn" onclick="abrirModal(1)">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
-                        Ver Projeto
-                    </button>
-                </div>
-            </div>
-            <div class="card-info">
-                <div class="card-tags">
-                    <span class="tag">HTML</span>
-                    <span class="tag">CSS</span>
-                    <span class="tag">Chart.js</span>
-                </div>
-                <h3>Dashboard Analytics</h3>
-                <p>Painel administrativo com gráficos interativos, métricas e design limpo.</p>
-                <div class="card-actions">
-                    <a href="#" class="action-link demo" target="_blank">Live Demo</a>
-                    <a href="#" class="action-link code" target="_blank">Código</a>
-                </div>
-            </div>
-        </div>
- 
-        <!-- PROJETO 3 -->
-        <div class="portfolio-card" data-category="component" data-index="2">
-            <div class="card-thumb">
-                <div class="thumb-browser">
-                    <div class="browser-bar">
-                        <span class="browser-dot"></span>
-                        <span class="browser-dot"></span>
-                        <span class="browser-dot"></span>
-                        <div class="browser-url">ui-components.dev</div>
+                    <div class="card-overlay">
+                        <button class="view-btn" onclick="abrirModal(1)">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                            Ver Projeto
+                        </button>
                     </div>
-                    <div class="thumb-preview" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-                        <div class="preview-cards-center">
-                            <div class="preview-ui-card">
-                                <div class="ui-avatar"></div>
-                                <div class="ui-lines">
-                                    <div class="ui-line long"></div>
-                                    <div class="ui-line short"></div>
+                </div>
+                <div class="card-info">
+                    <div class="card-tags">
+                        <span class="tag">PHP</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">Chart.js</span>
+                    </div>
+                    <h3>Dashboard Financeiro</h3>
+                    <p>Painel financeiro com gráficos, métricas e visão geral de receitas e despesas em tempo real.</p>
+                    <div class="card-actions">
+                        <a href="https://financeiro.bussolacriativa.com" class="action-link demo" target="_blank">Live Demo</a>
+                        <a href="https://github.com/Arezende7" class="action-link code" target="_blank">Código</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJETO 3: SITE DA BÚSSOLA -->
+            <div class="portfolio-card" data-category="landing" data-index="2">
+                <div class="card-thumb">
+                    <div class="thumb-browser">
+                        <div class="browser-bar">
+                            <span class="browser-dot"></span>
+                            <span class="browser-dot"></span>
+                            <span class="browser-dot"></span>
+                            <div class="browser-url">bussolacriativa.com</div>
+                        </div>
+                        <div class="thumb-preview preview-bg-landing">
+                            <div class="preview-hero">
+                                <div class="preview-nav">
+                                    <div class="preview-logo-bar"></div>
+                                    <div class="preview-nav-links">
+                                        <span></span><span></span><span></span>
+                                    </div>
+                                </div>
+                                <div class="preview-headline"></div>
+                                <div class="preview-subline"></div>
+                                <div class="preview-btns">
+                                    <div class="preview-btn primary"></div>
+                                    <div class="preview-btn secondary"></div>
                                 </div>
                             </div>
-                            <div class="preview-ui-card small">
-                                <div class="ui-lines">
-                                    <div class="ui-line mid"></div>
-                                    <div class="ui-line short"></div>
+                        </div>
+                    </div>
+                    <div class="card-overlay">
+                        <button class="view-btn" onclick="abrirModal(2)">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                            Ver Projeto
+                        </button>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <div class="card-tags">
+                        <span class="tag">WordPress</span>
+                        <span class="tag">Elementor</span>
+                        <span class="tag">SEO</span>
+                    </div>
+                    <h3>Site da Bússola Criativa</h3>
+                    <p>Site institucional da agência com foco em SEO, performance e conversão, integrado ao WhatsApp e ao CRM.</p>
+                    <div class="card-actions">
+                        <a href="https://bussolacriativa.com" class="action-link demo" target="_blank">Live Demo</a>
+                        <a href="https://github.com/Arezende7" class="action-link code" target="_blank">Código</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJETO 4: CLONE DO ORKUT -->
+            <div class="portfolio-card" data-category="app" data-index="3">
+                <div class="card-thumb">
+                    <div class="thumb-browser">
+                        <div class="browser-bar">
+                            <span class="browser-dot"></span>
+                            <span class="browser-dot"></span>
+                            <span class="browser-dot"></span>
+                            <div class="browser-url">orkut/index.html</div>
+                        </div>
+                        <div class="thumb-preview preview-bg-orkut">
+                            <div class="preview-orkut">
+                                <div class="orkut-header"></div>
+                                <div class="orkut-body">
+                                    <div class="orkut-profile">
+                                        <div class="orkut-avatar"></div>
+                                        <div class="orkut-name"></div>
+                                    </div>
+                                    <div class="orkut-feed">
+                                        <div class="orkut-post"></div>
+                                        <div class="orkut-post"></div>
+                                        <div class="orkut-post short"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="card-overlay">
-                    <button class="view-btn" onclick="abrirModal(2)">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
-                        Ver Projeto
-                    </button>
-                </div>
-            </div>
-            <div class="card-info">
-                <div class="card-tags">
-                    <span class="tag">CSS</span>
-                    <span class="tag">Animações</span>
-                </div>
-                <h3>UI Components Kit</h3>
-                <p>Biblioteca de componentes reutilizáveis com animações e estados interativos.</p>
-                <div class="card-actions">
-                    <a href="#" class="action-link demo" target="_blank">Live Demo</a>
-                    <a href="#" class="action-link code" target="_blank">Código</a>
-                </div>
-            </div>
-        </div>
- 
-        <!-- PROJETO 4 -->
-        <div class="portfolio-card featured" data-category="app" data-index="3">
-            <div class="card-thumb">
-                <div class="thumb-browser">
-                    <div class="browser-bar">
-                        <span class="browser-dot"></span>
-                        <span class="browser-dot"></span>
-                        <span class="browser-dot"></span>
-                        <div class="browser-url">weather-app.io</div>
-                    </div>
-                    <div class="thumb-preview" style="background: linear-gradient(180deg, #1e3a5f 0%, #2d6a9f 50%, #87ceeb 100%);">
-                        <div class="preview-weather">
-                            <div class="weather-icon">☀️</div>
-                            <div class="weather-temp"></div>
-                            <div class="weather-city"></div>
-                            <div class="weather-row">
-                                <div class="weather-info-item"></div>
-                                <div class="weather-info-item"></div>
-                                <div class="weather-info-item"></div>
-                            </div>
-                        </div>
+                    <div class="card-overlay">
+                        <button class="view-btn" onclick="abrirModal(3)">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                            Ver Projeto
+                        </button>
                     </div>
                 </div>
-                <span class="featured-badge">⭐ Destaque</span>
-                <div class="card-overlay">
-                    <button class="view-btn" onclick="abrirModal(3)">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
-                        Ver Projeto
-                    </button>
-                </div>
-            </div>
-            <div class="card-info">
-                <div class="card-tags">
-                    <span class="tag">JS</span>
-                    <span class="tag">API</span>
-                    <span class="tag">CSS</span>
-                </div>
-                <h3>Weather App</h3>
-                <p>Aplicativo de clima em tempo real usando API, com animações e design glassmorphism.</p>
-                <div class="card-actions">
-                    <a href="#" class="action-link demo" target="_blank">Live Demo</a>
-                    <a href="#" class="action-link code" target="_blank">Código</a>
-                </div>
-            </div>
-        </div>
- 
-        <!-- PROJETO 5 -->
-        <div class="portfolio-card" data-category="landing" data-index="4">
-            <div class="card-thumb">
-                <div class="thumb-browser">
-                    <div class="browser-bar">
-                        <span class="browser-dot"></span>
-                        <span class="browser-dot"></span>
-                        <span class="browser-dot"></span>
-                        <div class="browser-url">ecommerce.store</div>
+                <div class="card-info">
+                    <div class="card-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
                     </div>
-                    <div class="thumb-preview" style="background: #fff7ed;">
-                        <div class="preview-ecommerce">
-                            <div class="ecom-header">
-                                <div class="ecom-logo"></div>
-                                <div class="ecom-cart"></div>
-                            </div>
-                            <div class="ecom-products">
-                                <div class="ecom-product" style="background:#fed7aa;"></div>
-                                <div class="ecom-product" style="background:#fde68a;"></div>
-                                <div class="ecom-product" style="background:#bbf7d0;"></div>
-                            </div>
-                        </div>
+                    <h3>Nostalgia Orkut</h3>
+                    <p>Recriação da clássica rede social com perfil, scraps e visual nostálgico dos anos 2000.</p>
+                    <div class="card-actions">
+                        <a href="orkut/index.html" class="action-link demo" target="_blank">Live Demo</a>
+                        <a href="https://github.com/Arezende7" class="action-link code" target="_blank">Código</a>
                     </div>
                 </div>
-                <div class="card-overlay">
-                    <button class="view-btn" onclick="abrirModal(4)">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
-                        Ver Projeto
-                    </button>
-                </div>
             </div>
-            <div class="card-info">
-                <div class="card-tags">
-                    <span class="tag">HTML</span>
-                    <span class="tag">CSS</span>
-                    <span class="tag">JS</span>
-                </div>
-                <h3>E-commerce Store</h3>
-                <p>Loja virtual com carrinho de compras, filtros de produtos e layout responsivo.</p>
-                <div class="card-actions">
-                    <a href="#" class="action-link demo" target="_blank">Live Demo</a>
-                    <a href="#" class="action-link code" target="_blank">Código</a>
-                </div>
-            </div>
-        </div>
- 
-        <!-- PROJETO 6 -->
-        <div class="portfolio-card" data-category="component" data-index="5">
-            <div class="card-thumb">
-                <div class="thumb-browser">
-                    <div class="browser-bar">
-                        <span class="browser-dot"></span>
-                        <span class="browser-dot"></span>
-                        <span class="browser-dot"></span>
-                        <div class="browser-url">quiz-game.fun</div>
-                    </div>
-                    <div class="thumb-preview" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);">
-                        <div class="preview-quiz">
-                            <div class="quiz-question"></div>
-                            <div class="quiz-options">
-                                <div class="quiz-opt correct"></div>
-                                <div class="quiz-opt"></div>
-                                <div class="quiz-opt"></div>
-                                <div class="quiz-opt"></div>
-                            </div>
-                            <div class="quiz-progress">
-                                <div class="quiz-bar"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-overlay">
-                    <button class="view-btn" onclick="abrirModal(5)">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
-                        Ver Projeto
-                    </button>
-                </div>
-            </div>
-            <div class="card-info">
-                <div class="card-tags">
-                    <span class="tag">JS</span>
-                    <span class="tag">CSS</span>
-                </div>
-                <h3>Quiz Interativo</h3>
-                <p>Jogo de perguntas e respostas com animações, pontuação e tela de resultados.</p>
-                <div class="card-actions">
-                    <a href="#" class="action-link demo" target="_blank">Live Demo</a>
-                    <a href="#" class="action-link code" target="_blank">Código</a>
-                </div>
-            </div>
-        </div>
- 
-    </div>
- 
-</section>
- 
- 
-<!-- ===== MODAL DE PROJETO ===== -->
-<div class="modal-overlay" id="projectModal" onclick="fecharModal(event)">
-    <div class="modal-box">
- 
-        <button class="modal-close" onclick="fecharModalBtn()">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-        </button>
- 
-        <div class="modal-preview-area" id="modalPreview"></div>
- 
-        <div class="modal-info">
-            <div class="modal-tags" id="modalTags"></div>
-            <h3 id="modalTitle"></h3>
-            <p id="modalDesc"></p>
-            <div class="modal-links">
-                <a href="#" id="modalDemo" class="action-link demo" target="_blank">🚀 Live Demo</a>
-                <a href="#" id="modalCode" class="action-link code" target="_blank">💻 Ver Código</a>
-            </div>
-        </div>
- 
-    </div>
-</div>
 
+        </div>
 
-<script src="script.js"></script>
+    </section>
+
+    <!-- ===== HALL DA FAMA (CERTIFICADOS) ===== -->
+    <section class="hall-section" id="certificados">
+
+        <div class="hall-header">
+            <span class="hall-tag">HALL DA FAMA</span>
+            <h2>Certificados &amp; Conquistas</h2>
+            <p>
+                Uma coleção de experiências, especializações e certificações
+                que representam evolução constante e paixão por tecnologia.
+            </p>
+        </div>
+
+        <div class="hall-wall">
+            <div class="frame">
+                <div class="frame-inner">
+                    <img src="imagens/certificado MAKE.jpg" alt="Certificado MAKE">
+                </div>
+            </div>
+
+            <div class="frame large">
+                <div class="frame-inner">
+                    <img src="imagens/Certificado B3 mercados.jpg" alt="Certificado B3 Mercados">
+                </div>
+            </div>
+
+            <div class="frame">
+                <div class="frame-inner">
+                    <img src="imagens/Certificado B3 renda fixa.jpg" alt="Certificado B3 Renda Fixa">
+                </div>
+            </div>
+
+            <div class="frame">
+                <div class="frame-inner">
+                    <img src="imagens/Certificado B3.jpg" alt="Certificado B3">
+                </div>
+            </div>
+
+            <div class="frame">
+                <div class="frame-inner">
+                    <img src="imagens/Certificado Copy.jpg" alt="Certificado">
+                </div>
+            </div>
+
+            <div class="frame">
+                <div class="frame-inner">
+                    <img src="imagens/Certificado.jpg" alt="Certificado">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ===== CONTATO ===== -->
+    <footer class="contact-section" id="contato">
+
+        <div class="container">
+
+            <div class="section-title">
+                <span>Contato</span>
+                <h2>Vamos conversar?</h2>
+                <p>Estou aberto a oportunidades, projetos e parcerias. Me chame por qualquer um dos canais abaixo.</p>
+            </div>
+
+            <div class="contact-grid">
+                <a href="mailto:anderson.alvesderezende@gmail.com" class="contact-card">
+                    <span class="contact-icon">✉️</span>
+                    <strong>E-mail</strong>
+                    <span>anderson.alvesderezende@gmail.com</span>
+                </a>
+
+                <a href="https://www.linkedin.com/in/arezende7/" target="_blank" class="contact-card">
+                    <span class="contact-icon">💼</span>
+                    <strong>LinkedIn</strong>
+                    <span>/in/arezende7</span>
+                </a>
+
+                <a href="https://github.com/Arezende7" target="_blank" class="contact-card">
+                    <span class="contact-icon">💻</span>
+                    <strong>GitHub</strong>
+                    <span>@Arezende7</span>
+                </a>
+
+                <a href="https://wa.me/5537984032508" target="_blank" class="contact-card">
+                    <span class="contact-icon">📱</span>
+                    <strong>WhatsApp</strong>
+                    <span>(37) 98403-2508</span>
+                </a>
+            </div>
+
+            <p class="footer-bottom">
+                © 2026 Anderson de Rezende — Feito com HTML, CSS e JavaScript.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- ===== BOTÃO VOLTAR AO TOPO ===== -->
+    <button id="topButton" onclick="voltarAoTopo()" title="Voltar ao topo">↑</button>
+
+    <!-- ===== MODAL DE PROJETO ===== -->
+    <div class="modal-overlay" id="projectModal" onclick="fecharModal(event)">
+        <div class="modal-box">
+
+            <button class="modal-close" onclick="fecharModalBtn()">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+
+            <div class="modal-preview-area" id="modalPreview"></div>
+
+            <div class="modal-info">
+                <div class="modal-tags" id="modalTags"></div>
+                <h3 id="modalTitle"></h3>
+                <p id="modalDesc"></p>
+                <div class="modal-links">
+                    <a href="#" id="modalDemo" class="action-link demo" target="_blank">🚀 Live Demo</a>
+                    <a href="#" id="modalCode" class="action-link code" target="_blank">💻 Ver Código</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
